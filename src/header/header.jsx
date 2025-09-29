@@ -1,4 +1,4 @@
-import './Header.css'
+import './header.css'
 
 import Button from '../button/button'
 
