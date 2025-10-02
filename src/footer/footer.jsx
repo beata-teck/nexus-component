@@ -1,38 +1,78 @@
-import './Footer.css'
+import "./footer.css"
 
-import AnchorLi from '../AnchorLi/AnchorLi'
+export function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-content">
+          <div className="footer-section">
+            <h4 className="footer-title">Company</h4>
+            <ul className="footer-links">
+              <li>
+                <a href="#" className="footer-link">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="footer-link">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#" className="footer-link">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
 
-export default function Footer() {
-    return (
-        <footer>
-            <div className="footer-container">
-                <div className="upper">
-                    <ul className="company-sec">
-                        <h2 className="h2">Company</h2>
-                        <AnchorLi text='About Us' href='#' />
-                        <AnchorLi text='Careers' href='#' />
-                        <AnchorLi text='Contact' href='#' />
-                    </ul>
+          <div className="footer-section">
+            <h4 className="footer-title">Product</h4>
+            <ul className="footer-links">
+              <li>
+                <a href="#" className="footer-link">
+                  Features
+                </a>
+              </li>
+              <li>
+                <a href="#" className="footer-link">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#" className="footer-link">
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                    <ul className="product-sec">
-                        <h2 className="h2">Products</h2>
-                        <AnchorLi text='Features' href='#' />
-                        <AnchorLi text='Pricing' href='#' />
-                        <AnchorLi text='Support' href='#' />
-                    </ul>
+          <div className="footer-section">
+            <h4 className="footer-title">Resources</h4>
+            <ul className="footer-links">
+              <li>
+                <a href="#" className="footer-link">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#" className="footer-link">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#" className="footer-link">
+                  Community
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-                    <ul className="resources">
-                        <h2 className="h2">Resources</h2>
-                        <AnchorLi text='Documentation' href='#' />
-                        <AnchorLi text='Blog' href='#' />
-                        <AnchorLi text='community' href='#' />
-                    </ul>
-                </div>
-
-                <div className="lower">
-                    © 2024 Task Management Dashboard. All rights reserved.
-                </div>
-            </div>
-        </footer>
-    )
+        <div className="footer-bottom">
+          <p className="footer-copyright">© 2024 Task Management Dashboard. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  )
 }

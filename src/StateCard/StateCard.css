@@ -1,35 +1,53 @@
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+.stats-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
 
-.stat-card {
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
-    background-color: var(--main-bg-color);
-    border: 1px solid #e5e7eb;
-    border-left: .3rem solid;
-    border-radius: .5rem;
-    padding: 1rem;
+.stats-card--primary {
+  border-left: 4px solid #3b82f6;
+}
 
-    & h2 {
-        font-size: .875rem;
-        font-weight: 500;
-        margin: 0;
-        text-transform: uppercase;
-        letter-spacing: .05em;
-        color: var(--dim-font-color);
-    }
+.stats-card--secondary {
+  border-left: 4px solid #10b981;
+}
 
-    & h1 {
-        font-size: 2rem;
-    }
+.stats-card--accent {
+  border-left: 4px solid #f59e0b;
+}
 
-    & p {
-        font-size: .75rem;
-        color: var(--dim-font-color-2nd);
-        margin: 0;
-    }
+.stats-card--outline {
+  border-left: 4px solid #6b7280;
+}
+
+.stats-header {
+  margin-bottom: 0.5rem;
+}
+
+.stats-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stats-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stats-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.stats-description {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin: 0;
 }

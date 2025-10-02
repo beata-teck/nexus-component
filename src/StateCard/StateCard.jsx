@@ -1,11 +1,16 @@
-import './StatCard.css'
+import "./StatsCard.css"
 
-export default function StatCard({key, task_title, quan, task_status, task_color}) {
-    return (
-        <div key={key} className='stat-card' style={{borderLeftColor: task_color}}>
-            <h2>{task_title.toUpperCase()}</h2>
-            <h1>{quan}</h1>
-            <p>{task_status}</p>
-        </div>
-    )
+export function StatsCard({ title, value, color, description }) { 
+  return (
+    <div className={`stats-card ${color}`}>
+      <div className="stats-header">
+        <h3 className="stats-title">{title}</h3>
+      </div>
+
+      <div className="stats-content">
+        <div className="stats-value">{value}</div>
+        <p className="stats-description">{description}</p>
+      </div>
+    </div>
+  )
 }
